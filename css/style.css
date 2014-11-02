@@ -298,6 +298,7 @@ footer.entry-meta {
 	padding: 40px;
 
 	border-radius: 10px;
+	word-wrap:break-word;
 }
 
 #comments .comment .comment-author {
