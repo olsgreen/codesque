@@ -234,6 +234,11 @@ pre {
 /*
 | 5. Content Template
 */
+.entry-content img {
+	max-width: 100%;
+	height: auto;
+}
+
 .entry-meta.top {
 	margin-bottom: 30px;
 	color: #999;
