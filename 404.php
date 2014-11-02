@@ -14,7 +14,26 @@ get_header(); ?>
 			</header>
 
 			<div class="page-content text-center">
-				<p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'codesque' ); ?></p>
+				<?php 
+					$s = preg_replace("/(.*)-(html|htm|php|asp|aspx)$/","$1",$wp_query->query_vars['name']);
+					$posts = query_posts('post_type=any&name='.$s);
+					$s = str_replace("-"," ",$s);
+					if (count($posts) == 0) {
+						$posts = query_posts('post_type=any&s='.$s);
+					}
+					if (count($posts) > 0) {
+						echo "<ol><li>";
+						echo "<p>Were you looking for <strong>one of the following</strong> posts or pages?</p>";
+						echo "<ul>";
+						foreach ($posts as $post) {
+							echo '<li><a href="'.get_permalink($post->ID).'">'.$post->post_title.'</a></li>';
+						}
+						echo "</ul>";
+						echo "<p>If not, don't worry, try searching for it:</p></li>";
+					} else {						
+						echo "<p>" . _e( 'It looks like nothing was found at this location. Maybe try a search?', 'codesque' ) . "</p>";
+					}
+				?>
 
 				<?php get_search_form(); ?>
 			</div><!-- .page-content -->

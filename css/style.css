@@ -428,6 +428,16 @@ footer.entry-meta {
 }
 
 /*
+| 404 Page
+*/
+.error404 .page-content ol,
+.error404 .page-content ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+/*
 | 10. Mobile Tweaks
 */
 @media screen and (max-width: 767px) {
