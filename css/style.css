@@ -1,0 +1,447 @@
+/**
+ * Codesque WordPress Theme
+ * ========================
+ *
+ * TOC
+ * ---
+ * 1. Font Faces
+ * 2. Core
+ * 3. Site Header
+ * 4. Site Footer
+ * 5. Content Template
+ * 6. Comments
+ * 7. Pagination
+ * 8. Single Entry
+ * 9. Social Icons
+ * 10. Mobile Tweaks
+ * 
+ */
+
+/*
+| 1. Font Faces
+*/
+@font-face {
+  font-family: 'Entypo';
+  src: url('entypo/entypo.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('entypo/entypo.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+@font-face {
+  font-family: 'EntypoSocial';
+  src: url('entypo/social/entypo-social.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('entypo/social/entypo-social.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+/*
+| 2. Core
+*/
+body {
+	font-family: 'Raleway';
+	font-size: 16px;
+	line-height: 30px;
+	color: #333;
+	background: #f9f9f9;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	margin-top: 40px;
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 40px;
+	line-height: 46px;
+	color: #000;
+	display: block;
+	text-align: center;
+	line-height: 56px;
+	margin: 60px 0 20px;
+}
+
+h1 span.underline {
+	border-bottom: 1px dotted #ccc;
+}
+
+h1 span.solid-underline {
+	padding-bottom: 3px;
+	border-bottom: 2px solid #ccc;
+}
+
+h2 {
+	font-size: 28px;
+	line-height: 40px;
+	color: #333;
+	margin-top: 70px;
+}
+
+h3 {
+	font-size: 24px;
+	line-height: 36px;
+	color: #333;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+strong {
+	color: #333;
+}
+
+blockquote {
+	margin-left:0px;
+	font-size:24px;
+	line-height: 40px;
+	color: #333;
+	font-weight:100;
+}
+
+hr {
+    border: none;
+    background: -webkit-linear-gradient(0deg, #fff, #eee 20%, #eee 80%, #fff);
+    background: linear-gradient(90deg, #fff, #eee 20%, #eee 80%, #fff);
+    height: 1px;
+    margin: 50px 0 30px;
+}
+
+a:link,
+a:visited {
+	color: #333;
+	border-bottom: 1px dotted #ccc;
+	text-decoration: none;
+}
+
+h1 a:link,
+h1 a:visited {
+	color: #000;
+}
+
+pre {
+	white-space: pre;
+	word-wrap: normal;
+	overflow: auto;
+	padding: 12px;
+	background-color: #444;
+	border-radius: 3px;
+	color: #fff;
+	line-height: normal;
+}
+
+.grid-container.no-padding {
+	padding-left: -20px !important;
+	padding-right: -20px !important;
+}
+
+/*
+| 3. Site Header
+*/
+#siteHeader {
+	background: #fff;
+	margin-bottom: 20px;
+}
+
+#siteHeader ul {
+	margin-top: 17px;
+	text-align: right;
+}
+
+#siteHeader ul li {
+	list-style: none;
+	display: inline-block;
+	margin: 0 15px;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+#siteHeader .search input {
+	border: none;
+	background: #f9f9f9;
+	padding: 10px 20px;
+	margin-left: 5px;
+}
+
+#siteHeader .search input:focus {
+	outline: none;
+	border: 1px solid #eee;
+	padding: 9px 19px;
+}
+
+#siteHeader .search {
+	position: relative;
+}
+
+#siteHeader .search-icon {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+#siteHeader .search-icon:before {    
+	content: "\1F50D";
+	color: #ccc;
+}
+
+#logo {
+	padding-top: 20px;
+  	border: none !important;
+}
+
+#logo span {
+	font-family: 'Arial';
+	text-transform: uppercase;
+	font-size: 26px;
+	font-weight: bold;
+	letter-spacing: -0.05em;
+
+    background: linear-gradient(180deg, #8ec9fb 35%, #1b85dc);
+  	background-clip: text;
+  	text-fill-color: transparent;
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+
+/*
+| 4. Site Footer
+*/
+#siteFooter {
+	font-size: 12px;
+	color: #ccc;
+	margin-bottom: 30px;
+	line-height: normal;
+}
+
+#siteFooter a.icon-holder {
+	border: none;
+	color: #ccc;
+}
+
+/*
+| 5. Content Template
+*/
+.entry-meta.top {
+	margin-bottom: 30px;
+	color: #999;
+}
+
+.entry-meta.top > span:after {
+	content: '|';
+	padding: 0 5px 0 10px;
+	color: #eee;
+}
+
+.entry-meta.top > span:last-child:after {
+	display: none;
+}
+
+.entry-meta {
+	text-align: center;
+}
+
+footer.entry-meta {
+	margin: 30px 0 40px;	
+}
+
+.entry-meta a:link,
+.entry-meta a:visited {
+
+	color: #999;
+}
+
+.tag-links {
+	margin-left: 10px;
+}
+
+.tag-links a {
+	text-transform: uppercase;
+	margin-right: 10px;
+}
+
+.tag-links a:last-child {
+	margin-right: 0;
+}
+
+.tag-links a:before {
+	content: '#';
+}
+
+/*
+| 6. Comments
+*/
+#comments ol {
+	padding: 0;
+	list-style: none;
+}
+
+#comments ol .children {
+	padding-left: 40px;
+}
+
+#comments .comment .comment-body {
+	background: #fff;
+	margin: 20px 0;
+	padding: 40px;
+
+	border-radius: 10px;
+}
+
+#comments .comment .comment-author {
+	float: left;
+}
+
+#comments .comment .comment-meta {
+	float: right;
+	margin-top: 15px;
+}
+
+#comments .comment .comment-meta a:link,
+#comments .comment .comment-meta a:visited {
+	color: #999;
+}
+
+#comments .comment img {
+	border-radius: 3px;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+#comments #respond {
+	background: #fff;
+	margin: 20px 0;
+	padding: 5px 40px 20px;
+
+	border-radius: 10px;
+}
+
+#comments #respond input,
+#comments #respond textarea {
+	border: none;
+	background: #f9f9f9;
+	padding: 10px 20px;
+	margin-left: 5px;
+}
+
+#comments #respond input:focus,
+#comments #respond textarea:focus {
+	outline: none;
+	border: 1px solid #eee;
+	padding: 9px 19px;
+}
+
+#comments #respond label {
+	width: 20%;	
+	display: inline-block;
+	vertical-align: top;
+}
+
+#comments #respond input {
+	width: 50%;
+}
+
+#comments #respond textarea {
+	width: 70%;
+}
+
+#comments #respond #submit {
+	background-color: #e53a2b;
+	border-bottom: 3px solid #ccc;
+	color: #fff;
+}
+
+#comments #respond #submit:hover {
+	margin-top: 2px;
+	border-bottom: 1px solid #ccc;
+}
+
+/*
+| 7. Pagination
+*/
+.paging-navigation {
+	text-align: center;
+	margin: 40px 0 40px;
+}
+
+.paging-navigation .prev {
+	float: left;
+}
+
+.paging-navigation .next {
+	float: right;
+}
+
+/* 
+| 8. Single Entry
+*/
+.single .post-navigation a:first-child {
+	float: left;
+}
+
+.single .post-navigation a:last-child {
+	float: right;
+}
+
+/*
+| 9. Social Icons
+*/
+.icon:before {
+	font:48px/.75 'Entypo';
+    height:36px;
+    width:32px;    
+    margin-right:5px;
+    vertical-align:-2px;
+    text-decoration:none;
+    display:inline-block;
+    zoom:1;
+}
+
+.icon.social:before {
+	font:48px/.75 'EntypoSocial';
+}
+
+.icon.twitter:before {
+	content: '\F309';
+}
+
+.icon.github:before {
+	content: '\F300';
+}
+
+/*
+| 10. Mobile Tweaks
+*/
+@media screen and (max-width: 767px) {
+
+	h1 {
+		font-size: 36px;
+		line-height: 48px;
+	}
+
+	#siteHeader ul {		
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+
+	#siteHeader ul li {
+		margin: 0 9px 25px;
+	}
+
+	#logo {
+		border: none;
+	}
+
+	#logo span {
+		display: block;
+		text-align: center;
+		margin: -20px 0;
+		padding: 0;
+		font-size: 	36px;
+	}
+
+}
