@@ -40,7 +40,8 @@ body {
 	font-size: 16px;
 	line-height: 30px;
 	color: #333;
-	background: #f7f7f7;
+	background-color: #f9f9f9;
+	background: linear-gradient(180deg, #f3f3f3, #fff 150px);
 }
 
 h1,
@@ -114,8 +115,8 @@ blockquote {
 
 hr {
     border: none;
-    background: -webkit-linear-gradient(90deg, #f7f7f7, #ddd 20%, #ddd 80%, #f7f7f7;
-    background: linear-gradient(90deg, #f7f7f7, #ddd 20%, #ddd 80%, #f7f7f7);
+    background: -webkit-linear-gradient(90deg, #f9f9f9, #ddd 20%, #ddd 80%, #f9f9f9;
+    background: linear-gradient(90deg, #f9f9f9, #ddd 20%, #ddd 80%, #f9f9f9);
     height: 1px;
     margin: 50px 0 30px;
 }
@@ -154,7 +155,7 @@ pre {
 #siteHeader {
 	background: #fff;
 	margin-bottom: 20px;
-	border-bottom: 3px solid #f0f0f0;
+	border-bottom: 3px solid #eee;
 	padding-bottom: 1px;
 }
 
@@ -173,7 +174,7 @@ pre {
 
 #siteHeader .search input {
 	border: none;
-	background: #f7f7f7;
+	background: #f9f9f9;
 	padding: 10px 20px;
 	margin-left: 5px;
 }
@@ -300,7 +301,7 @@ footer.entry-meta {
 }
 
 #comments .comment .comment-body {
-	background: #fff;
+	background: #f9f9f9;
 	margin: 20px 0;
 	padding: 40px;
 
@@ -339,7 +340,7 @@ footer.entry-meta {
 #comments #respond input,
 #comments #respond textarea {
 	border: none;
-	background: #f7f7f7;
+	background: #f9f9f9;
 	padding: 10px 20px;
 	margin-left: 5px;
 }
