@@ -40,7 +40,7 @@ body {
 	font-size: 16px;
 	line-height: 30px;
 	color: #333;
-	background: #f9f9f9;
+	background: #f7f7f7;
 }
 
 h1,
@@ -114,8 +114,8 @@ blockquote {
 
 hr {
     border: none;
-    background: -webkit-linear-gradient(0deg, #fff, #eee 20%, #eee 80%, #fff);
-    background: linear-gradient(90deg, #fff, #eee 20%, #eee 80%, #fff);
+    background: -webkit-linear-gradient(90deg, #f7f7f7, #ddd 20%, #ddd 80%, #f7f7f7;
+    background: linear-gradient(90deg, #f7f7f7, #ddd 20%, #ddd 80%, #f7f7f7);
     height: 1px;
     margin: 50px 0 30px;
 }
@@ -154,6 +154,8 @@ pre {
 #siteHeader {
 	background: #fff;
 	margin-bottom: 20px;
+	border-bottom: 3px solid #f0f0f0;
+	padding-bottom: 1px;
 }
 
 #siteHeader ul {
@@ -166,12 +168,12 @@ pre {
 	display: inline-block;
 	margin: 0 15px;
 	font-size: 14px;
-	font-weight: 500;
+	font-weight: 600;
 }
 
 #siteHeader .search input {
 	border: none;
-	background: #f9f9f9;
+	background: #f7f7f7;
 	padding: 10px 20px;
 	margin-left: 5px;
 }
@@ -337,7 +339,7 @@ footer.entry-meta {
 #comments #respond input,
 #comments #respond textarea {
 	border: none;
-	background: #f9f9f9;
+	background: #f7f7f7;
 	padding: 10px 20px;
 	margin-left: 5px;
 }

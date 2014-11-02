@@ -26,7 +26,7 @@
 	<![endif]-->
 	<?php wp_head(); ?>
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
-	<link href="http://fonts.googleapis.com/css?family=Raleway:400,300,700,200" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Raleway:500,400,300,700,200" rel="stylesheet" type="text/css">
 </head>
 
 <body <?php body_class(); ?>>
