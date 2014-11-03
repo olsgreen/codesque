@@ -224,6 +224,8 @@ pre {
 	font-weight: bold;
 	letter-spacing: -0.05em;
 
+	color: #1b85dc;
+
     background: linear-gradient(180deg, #8ec9fb 35%, #1b85dc);
   	background-clip: text;
   	text-fill-color: transparent;
