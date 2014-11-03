@@ -203,13 +203,16 @@ pre {
 
 #siteHeader .search-icon {
 	position: absolute;
-	right: 0;
-	top: 0;
+	right: 7px;
+	top: 7px;
+	width: 22px;
+	height: 22px;
+	background: url('../images/search-icon.png');
+	background-size: contain;
 }
 
-#siteHeader .search-icon:before {    
-	content: "\1F50D";
-	color: #ccc;
+#siteHeader .search-icon:hover {
+	cursor: pointer;
 }
 
 #logo {
