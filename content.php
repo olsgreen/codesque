@@ -12,7 +12,7 @@
 		<?php
 			if ( is_single() ) :
 				the_title( '<h1 class="entry-title"><span class="underline">', '</span></h1>' );
-			elseif ( is_archive() ) :
+			elseif ( is_archive() || is_search() ) :
 				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 			else :
 				the_title( '<h1 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1>' );
@@ -58,7 +58,7 @@
 		?>
 	</div><!-- .entry-content -->
 	<?php endif; ?>
-	<?php if ( !is_home() && !is_archive() ) : ?>
+	<?php if ( is_single() ) : ?>
 	<hr>
 	<?php endif; ?>
 	<?php the_tags( '<footer class="entry-meta">TAGS<span class="tag-links">', '', '</span></footer>' ); ?>
