@@ -127,8 +127,8 @@ blockquote {
 
 hr {
     border: none;
-    background: -webkit-linear-gradient(90deg, #f9f9f9, #ddd 20%, #ddd 80%, #f9f9f9;
-    background: linear-gradient(90deg, #f9f9f9, #ddd 20%, #ddd 80%, #f9f9f9);
+    background: #ccc -webkit-linear-gradient(90deg, #f9f9f9, #ddd 20%, #ddd 80%, #f9f9f9;
+    background: #ccc linear-gradient(90deg, #f9f9f9, #ddd 20%, #ddd 80%, #f9f9f9);
     height: 1px;
     margin: 50px 0 30px;
 }
