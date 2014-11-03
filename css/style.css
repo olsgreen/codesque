@@ -355,7 +355,7 @@ footer.entry-meta {
 }
 
 #comments #respond {
-	background: #fff;
+	background: #f9f9f9;
 	margin: 20px 0;
 	padding: 5px 40px 20px;
 
@@ -365,7 +365,7 @@ footer.entry-meta {
 #comments #respond input,
 #comments #respond textarea {
 	border: none;
-	background: #f9f9f9;
+	background: #fff;
 	padding: 10px 20px;
 	margin-left: 5px;
 }
