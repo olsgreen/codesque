@@ -9,6 +9,7 @@
 	<div class="grid-80">
 		&copy; <?php echo date('Y'); ?> Oliver Green.
 All third party content, logos, trademarks, etc are property of their respective owners.
+Powered by the <a href="https://github.com/olsgreen/codesque">Codesque WordPress theme</a>.
 	</div>
 	<div class="grid-20 text-right">
 

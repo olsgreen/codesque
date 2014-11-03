@@ -251,11 +251,16 @@ pre {
 	font-size: 12px;
 	color: #ccc;
 	margin-bottom: 30px;
-	line-height: normal;
+	line-height: 18px;
 }
 
 #siteFooter a.icon-holder {
 	border: none;
+	color: #ccc;
+}
+
+#siteFooter a:link,
+#siteFooter a:visited {
 	color: #ccc;
 }
 
