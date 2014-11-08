@@ -1,0 +1,21 @@
+{
+    "name": "olsgreen/codesque",
+    "type": "wordpress-theme",
+    "require": {
+        "composer/installers": "~1.0"
+    },
+    "keywords": ["theme", "minimal", "white", "light", "simple"],
+    "authors": [
+        {
+            "name": "Oliver Green",
+            "email": "green2go@gmail.com",
+            "homepage": "http://www.codeblog.co.uk",
+            "role": "Developer"
+        }    
+     ],
+     "homepage": "http://codeblog.co.uk",
+     "support": {
+        "issues": "https://github.com/olsgreen/wp-codesque-theme/issues"
+    },
+    "license": "GPL-3.0"
+}
