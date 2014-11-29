@@ -4,7 +4,7 @@
  */
 
 if ( ! isset( $content_width ) ) {
-	$content_width = 474;
+	$content_width = 700;
 }
 
 if ( ! function_exists( 'codesque_setup' ) ) :
@@ -55,7 +55,7 @@ add_action( 'after_setup_theme', 'codesque_setup' );
  */
 function codesque_content_width() {
 	if ( is_attachment() && wp_attachment_is_image() ) {
-		$GLOBALS['content_width'] = 810;
+		$GLOBALS['content_width'] = 700;
 	}
 }
 add_action( 'template_redirect', 'codesque_content_width' );
